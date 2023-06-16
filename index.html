@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rose Birthday Cards</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+      <!-- card one hermit -->
+
+      <div class="tarot-card">
+        <img src="images/7.png" />
+      </div>
+
+      <div class="tarot-card">
+        <img src="images/6.png" />
+      </div>
+
+      <div class="tarot-card">
+        <img src="images/5.png" />
+      </div>
+
+      <div class="tarot-card">
+        <img src="images/4.png" />
+      </div>
+
+      <!-- card two temperance -->
+      <div class="tarot-card shuffle">
+        <img src="images/3.png" />
+      </div>
+
+      <!-- card three hanged-man -->
+      <div class="tarot-card">
+        <img src="images/2.png" />
+      </div>
+
+      <!-- card four hierophant -->
+      <div class="tarot-card">
+        <img src="images/1.png" />
+      </div>
+
+      <!--   <h1>Click to Shuffle</h1> -->
+    </div>
+
+    <!-- sm btns -->
+    <a href="https://twitter.com/rahulsahni169"
+      ><button class="twitter-btn"><i class="fab fa-twitter"></i></button
+    ></a>
+
+    <!-- made with love footer -->
+    <div class="made-with-love">
+      Made with <i id="heart">💖</i>&<i id="coffee">☕</i> by
+      <a href="https://github.com/develooperrahulofficial">Developer Rahul</a>
+    </div>
+
+    <!-- <a href="https://www.linkedin.com/in/cmlohr/"
+      ><button class="in-btn"><i class="fab fa-linkedin-in"></i></button
+    ></a> -->
+    <!-- partial -->
+    <script>
+      function autoplay() {
+        var t = setTimeout(function () {
+          var button = document.querySelector('[title="Play"]') || false;
+          if (button) {
+            console.log("Click", button);
+            button.click();
+          }
+        }, 999);
+      }
+      document.addEventListener("DOMContentLoaded", (event) => {
+        autoplay();
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
